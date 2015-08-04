@@ -1,0 +1,395 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 2800px;
+	width: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+#cover {
+	background: #fff;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+#we {
+	width: 566px;
+	height: 250px;
+	margin: -117px 0 0 -283px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 20;
+}
+#we-cover, #we-cover2 {
+	width: 800px;
+	height: 250px;
+	margin: -117px 0 0 -400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 21;
+	background: #fff;
+}
+#we-cover2 {
+	height: 100vh;
+	margin: -1217px 0 0 -290px;
+}
+#them {
+	width: 600px;
+	height: 245px;
+	margin: -117px 0 0 -263px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 22;
+}
+#them-cover, #them-cover2 {
+	width: 720px;
+	height: 245px;
+	margin: -117px 0 0 -2000px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 23;
+	background: #fff;
+}
+#them-cover2 {
+	height: 500px !important;
+	margin: -117px 0 0 -263px;
+}
+#them-holder {
+	display: none;
+}
+#us {
+	width: 550px;
+	height: 245px;
+	margin: -117px 0 0 -263px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 24;
+	transition: opacity 0.4s;
+}
+#us-cover {
+	width: 550px;
+	height: 634px;
+	margin: -117px 0 0 -263px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 25;
+	background: #fff;
+}
+#us-holder {
+	display: none;
+}
+#top {
+	position: absolute;
+	top: 2000;
+}
+.hamburger {
+	font-size: 2em;
+	font-weight: bold;
+	color: #ea0025;
+	position: fixed;
+	top: 2%;
+	left: 2%;
+	cursor: pointer;
+	z-index: 100;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	transition: color 0.5s;
+}
+.hamburger:hover {
+	color: #000;
+}
+#nav {
+	opacity: 0;
+	position: fixed;
+	font-size: 0.7em;
+	top: 8%;
+	left: 2%;
+	line-height: 1.8em;
+	z-index: 100;
+	transition: display 0.5s, opacity 0.5s;
+}
+#nav a {
+	color: #ea0025;
+	font-weight: bold;
+	display: block;
+	letter-spacing: 5px;
+	transition: color 0.5s;
+}
+#nav a:hover {
+	color: #000;
+}
+.about-anchor {
+	position: absolute;
+	top: -80px;
+}
+.about {
+	width: 800px;
+	position: absolute;
+	top: 4100px;
+	left: 50%;
+	margin-left: -400px;
+}
+.about .header {
+	font-size: 2em;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+.about .text {
+	font-family: "Avenir", Helvetica, sans-serif;
+	direction:rtl;
+	text-align: justify;
+	font-size: 1em;
+	width: 370px;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	line-height: 1.7em;
+}
+.palm {
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	top: 4460px;
+}
+#cleanPalm, #pixelPalm {
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -150px;
+}
+#cleanPalm {
+	z-index: 1;
+}
+.t {
+	position: absolute;
+	left: 0;
+	top: 35%;
+	font-family: "Avenir", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 3em;
+}
+.minus {
+	position: absolute;
+	top: 560px;
+	left: 50%;
+	font-family: "Avenir", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 4em;
+}
+.contact {
+	width: 900px;
+	background: #ea0025;
+	height: 400px;
+	margin: 0 auto;
+	color: #fff;
+	position: absolute;
+	margin-left: -450px;
+	left: 50%;
+	top: 5210px;
+	padding: 50px 0 0 10px;
+	overflow: visible;
+}
+.contact a {
+	color: #fff;
+}
+.contact h1 {
+	font-size: 9.8em;
+	margin: 0;
+	padding: 0;
+	line-height: 0.8em;
+	width: 930px;
+}
+.contact h3 {
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.footer {
+	text-align: center;
+	width: 1200px;
+	position: absolute;
+	left: 50%;
+	margin: 0 0 30px -600px;
+	top: 5760px;
+}
+.leaders {
+	font-family: "Avenir", Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.socials a {
+	color: #ea0025;
+	font-size: 1.1em;
+	padding: 0 4px;
+	transition: color 0.5s;
+}
+.socials a:hover {
+	color: #000;
+}
+#logo {
+	opacity: 0;
+	position: absolute;
+	top: 2220px;
+	left: 50%;
+	width: 900px;
+	margin-left: -450px;
+	transition: opacity 0.4s;
+}
+#crowd {
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	top: 3300px;
+	margin-left: -450px;
+	z-index: 500;
+	transition: opacity 0.4s;
+}
+.down-arrow {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	width: 50px;
+	margin-left: -25px;
+	transition: all 0.4s;
+	z-index: 999999;
+	opacity: 0;
+}
+.down-arrow img {
+	width: 100%;
+}
+.side-icons {
+	height: 200px;
+	width: 30px;
+	position: fixed;
+	left: 20px;
+	top: 50%;
+	margin-top: -100px;
+	z-index: 999999;
+}
+.side-icons img {
+	display: block;
+	width: 100%;
+	padding-top: 15px;
+}
+.center-icons {
+	width: 360px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -180px;
+	z-index: 999999;
+}
+.center-icons img {
+	width: 100%;
+}
+.eye, .flux {
+	display: none;
+}
+@media screen and (max-width: 1000px){
+    #cover, #scroll {
+    	display: none;
+    }
+    #logo {
+    	position: absolute;
+    	top: 150px !important;
+    	display: block;
+    	opacity: 1 !important;
+    	margin-left: -447px;
+    }
+    #we, #we-cover, #we-cover2, #them, #them-cover, #them-cover2, #us, #us-cover, #crowd {
+    	display: none;
+    	opacity: 0;
+    }
+    .hamburger {
+    	font-size: 3.5em;
+    }
+    #nav a {
+    	font-size: 2.5em;
+    	line-height: 2em;
+    }
+    .down-arrow {
+    	display: none;
+    }
+    .about {
+    	top: 1300px;
+    	left: 50%;
+    }
+    .about .header {
+    	font-size: 3em;
+    }
+    .about .text {
+    	font-size: 2em;
+    	line-height: 1.3em;
+    	width: 550px;
+    	top: 75px;
+    }
+    .palm {
+    	top: 1850px;
+    	width: 900px;
+    }
+    #cleanPalm, #pixelPalm {
+    	width: 500px;
+    	margin-left: -250px;
+
+    }
+    .minus {
+    	top: 800px;
+    }
+    .contact {
+    	top: 2850px;
+    	width: 900px;
+    }
+    .footer {
+    	top: 3450px;
+    	margin-bottom: 100px;
+    	width: 800px;
+    	margin-left: -400px;
+    }
+    .leaders {
+    	font-size: 1.8em;
+    	margin-bottom: 30px;
+    }
+    .socials a {
+    	font-size: 4em;
+    	margin: 0 20px 130px 20px;
+    }
+    .side-icons {
+    	top: 30%;
+    	width: 60px;
+    	left: 40px;
+	}
+	.eye, .knife, .flux {
+		display: none;
+		opacity: 0;
+	}
+}
+@media screen and (max-width: 1000px) and (orientation: landscape){
+    .side-icons {
+    	top: 70%;
+    }
+}
